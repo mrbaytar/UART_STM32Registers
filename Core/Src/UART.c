@@ -58,6 +58,10 @@ void UART2_SendChar(char c)
 	while(!(USART2->SR & (1 << 6)));
 }
 
+void UART2_SendString(char *string)
+{
+	while (*string) UART2_SendChar(*string++);
+}
 
 
 

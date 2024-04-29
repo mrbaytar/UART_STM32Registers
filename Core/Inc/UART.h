@@ -12,5 +12,5 @@
 
 void USART2_Init(void);
 void UART2_SendChar(char c);
-
+void UART2_SendString(char *string);
 #endif /* INC_UART_H_ */

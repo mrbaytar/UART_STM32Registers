@@ -19,7 +19,8 @@ int main(void)
 
   while (1)
   {
-	  UART2_SendChar('M');
+	  //UART2_SendChar('M');
+	  UART2_SendString("Hello World!\n");
 	  delay(100000000);
   }
 }
